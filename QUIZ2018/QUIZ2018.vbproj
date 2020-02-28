@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E2F8531-068B-447E-A5E2-841AD38058EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QUIZ2018.My.MyApplication</StartupObject>
+    <RootNamespace>QUIZ2018</RootNamespace>
+    <AssemblyName>QUIZ2018</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>QUIZ2018.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QUIZ2018.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>QUIZ2018.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>QUIZ2018.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddPoints.Designer.vb">
+      <DependentUpon>frmAddPoints.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddPoints.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBack.Designer.vb">
+      <DependentUpon>frmBack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTitle.Designer.vb">
+      <DependentUpon>frmTitle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTitle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame1.Designer.vb">
+      <DependentUpon>frmGame1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame2.Designer.vb">
+      <DependentUpon>frmGame2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame3.Designer.vb">
+      <DependentUpon>frmGame3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame4.Designer.vb">
+      <DependentUpon>frmGame4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame4Text.Designer.vb">
+      <DependentUpon>frmGame4Text.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame4Text.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame5.Designer.vb">
+      <DependentUpon>frmGame5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame6.Designer.vb">
+      <DependentUpon>frmGame6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame6Video.Designer.vb">
+      <DependentUpon>frmGame6Video.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame6Video.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame7.Designer.vb">
+      <DependentUpon>frmGame7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame8.Designer.vb">
+      <DependentUpon>frmGame8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame9.Designer.vb">
+      <DependentUpon>frmGame9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pblVariables.vb" />
+    <Compile Include="frmResults.Designer.vb">
+      <DependentUpon>frmResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAddPoints.resx">
+      <DependentUpon>frmAddPoints.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBack.resx">
+      <DependentUpon>frmBack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTitle.resx">
+      <DependentUpon>frmTitle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame1.resx">
+      <DependentUpon>frmGame1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame2.resx">
+      <DependentUpon>frmGame2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame3.resx">
+      <DependentUpon>frmGame3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame4.resx">
+      <DependentUpon>frmGame4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame4Text.resx">
+      <DependentUpon>frmGame4Text.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame5.resx">
+      <DependentUpon>frmGame5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame6.resx">
+      <DependentUpon>frmGame6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame6Video.resx">
+      <DependentUpon>frmGame6Video.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame7.resx">
+      <DependentUpon>frmGame7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame8.resx">
+      <DependentUpon>frmGame8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame9.resx">
+      <DependentUpon>frmGame9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResults.resx">
+      <DependentUpon>frmResults.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bcg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bcg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frk3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1471247453_630.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wood-PNG-File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1dsp-20151221-pattern003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frk4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frk5.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
